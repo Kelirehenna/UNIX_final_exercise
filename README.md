@@ -3,7 +3,7 @@
 This repository contains the solution to task 1 of the UNIX course: Distribution of PHRED qualities over the whole genome and by chromosome.
 
 ## Running the script
-Choose a working directory. The script will create a data and results directory. It will copy the input file into the data directory. The created files for the R script willbe placed in the data directory as well. The resulting graphs will be placed in the results directory.
+Choose a working directory. The script will create a data and results directory. It will copy the input file into the data directory. The created files for the R script will be placed in the data directory as well. The resulting graphs will be placed in the results directory.
 First, we need to make the script executable.
 ```
 chmod +x workflow.sh
@@ -20,7 +20,7 @@ The script will also inform you about what it is currently doing.
 INPUTDATA=./data/luscinia_vars.vcf.gz
 zcat $INPUTDATA | grep -v '^##' | cut -f1,2,6 | tail -c +2 > ./data/data-whole-g.tsv
 ```
-To prepare files for the distribution by chromosome graphs, we use the file we created in the previous step. To keep the data amount mmanable, the script divides the chromosomes into five groups, which will have separate graphs. We extract data only for the chromosomes in the group and create five separate files.
+To prepare files for the distribution by chromosome graphs, we use the file we created in the previous step. To keep the data amount manageable, the script divides the chromosomes into five groups, which will have separate graphs. We extract data only for the chromosomes in the group and create five separate files.
 ```
 GENOM=./data/data-whole-g.tsv
 < $GENOM grep -e '^chr1\s' -e '^chr2\s' -e '^chr3\s' -e '^chr4\s' -e '^chr5\s' -e '^chr6\s' > ./data/data-chr1-6.tsv
