@@ -60,26 +60,26 @@ pf
 
 
 #saving plots in the results folder
-jpeg("results/whole-genome.jpg",width=1200*0.8,height=800*0.8, quality = 100)
+jpeg("results/whole-genome.jpg",width=1200,height=800, quality = 100)
 plot(pa)
 dev.off()
 
-jpeg("results/chr1-6.jpg",width=1200*0.8,height=800*0.8, quality = 100)
+jpeg("results/chr1-6.jpg",width=1200,height=800, quality = 100)
 plot(pb)
 dev.off()
 
-jpeg("results/chr7-12.jpg",width=1200*0.8,height=800*0.8, quality = 100)
+jpeg("results/chr7-12.jpg",width=1200,height=800, quality = 100)
 plot(pc)
 dev.off()
 
-jpeg("results/chr13-18.jpg",width=1200*0.8,height=800*0.8, quality = 100)
+jpeg("results/chr13-18.jpg",width=1200,height=800, quality = 100)
 plot(pd)
 dev.off()
 
-jpeg("results/chr19-24.jpg",width=1200*0.8,height=800*0.8, quality = 100)
+jpeg("results/chr19-24.jpg",width=1200,height=800, quality = 100)
 plot(pe)
 dev.off()
 
-jpeg("results/chr25-Z.jpg",width=1200*0.8,height=800*0.8, quality = 100)
+jpeg("results/chr25-Z.jpg",width=1200,height=800, quality = 100)
 plot(pf)
 dev.off()

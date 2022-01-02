@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Preparing directories and initial data"
+echo "Preparing directories and fetching data"
 
 #preparation of your working directory and data
 mkdir data
@@ -35,6 +35,8 @@ GENOM=./data/data-whole-g.tsv
 < $GENOM grep -e '^chr19\s' -e '^chr20\s' -e '^chr21\s' -e '^chr22\s' -e '^chr23\s' -e '^chr24\s' > ./data/data-chr19-24.tsv
 < $GENOM grep -e '^chr25\s' -e '^chr26\s' -e '^chr27\s' -e '^chrZ\s' > ./data/data-chr25-Z.tsv
 
+
+echo "Generating graphs"
 
 #run the rscript for the graphs in R
 Rscript plots.R
