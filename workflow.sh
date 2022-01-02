@@ -1,4 +1,3 @@
-< $GENOM grep -e '^chr[1]\s' -e '^chr[2]\s'  > ./data/data-chr1-10.tsv
 #!/bin/bash
 
 echo "Preparing directories and data"
