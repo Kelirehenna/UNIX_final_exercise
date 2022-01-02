@@ -37,3 +37,4 @@ GENOM=./data/data-whole-g.tsv
 #run the rscript for the graphs
 Rscript plots.R
 
+echo "All is done"
